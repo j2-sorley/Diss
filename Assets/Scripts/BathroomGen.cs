@@ -31,6 +31,10 @@ public class BathroomGen : MonoBehaviour
             Instantiate(Items[Random.Range(0, Items.Length)], spawnPoints[b].position, spawnPoints[b].rotation);
             spawnPoints.Remove(spawnPoints[b]);
        }
+         // Light Object
+         int L = Random.Range(0, Lights.Length);
+         Instantiate(Lights[L], LightSpawnPoint.position, Quaternion.identity);
+
        // Wall Items
        WallItemsAmount = Random.Range(2, WallspawnPoints.Count);
        for (int i = 0; i < WallItemsAmount; i++)
@@ -47,8 +51,7 @@ public class BathroomGen : MonoBehaviour
        Instantiate(FloorItems[Random.Range(0, FloorItems.Length)], FloorSpawnPoints[b].position, Quaternion.identity);
        FloorSpawnPoints.Remove(FloorSpawnPoints[b]);
        }
-       // Light Object
-       Instantiate(Lights[Random.Range(0, Lights.Length)], LightSpawnPoint.position, Quaternion.identity);
+       
              
             
     }
