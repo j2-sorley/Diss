@@ -761,6 +761,7 @@ MonoBehaviour:
   - {fileID: 1269782981221070670, guid: c1b4bcc79c55b4647ba9ed4f947f7cd1, type: 3}
   - {fileID: 6679327399161388982, guid: 1974bb8e3d3cd284383af7db07742380, type: 3}
   - {fileID: 5122989756549757592, guid: 325f5a70c6b53bb458508404070e8d76, type: 3}
+  - {fileID: 5697705508570947288, guid: 44faab56cef55d249a3809cec024376d, type: 3}
   WallItems:
   - {fileID: 7653128471284787094, guid: 450c0bee5ea9e1842be7dc804ee4d04e, type: 3}
   FloorItems:

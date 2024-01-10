@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEngine.ParticleSystem;
 
-public class InteractionAnimation : MonoBehaviour
+public class InteractionParticals : MonoBehaviour
 {
     public bool InRange;
-    public bool Enabled;
-    public GameObject particals;
+    public bool Enabled; 
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,15 +21,17 @@ public class InteractionAnimation : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
+              
+
                 if (!Enabled)
                 {
-                    particals.SetActive(true);
+                    animator.Play("Opening");
                     Enabled = true;
                 }
 
                 else
                 {
-                    particals.SetActive(false);
+                    animator.Play("Closing");
                     Enabled = false;
                 }
 
