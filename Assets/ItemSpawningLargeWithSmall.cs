@@ -17,6 +17,7 @@ public class ItemSpawningLargeWithSmall : MonoBehaviour
         for (int i = 0; i < ItemAmount; i++)
         {
             int b = Random.Range(0, SmallspawnPoints.Count);
+            Instantiate(Items[Random.Range(0, Items.Length)], SmallspawnPoints[b].position, SmallspawnPoints[b].rotation);
             SmallspawnPoints.Remove(SmallspawnPoints[b]);
         }
 
