@@ -9,7 +9,6 @@ public class WallMatPicker : MonoBehaviour
     void Start()
     {
         int i = Random.Range(0, Mats.Length);
-
         for (int j = 0; j < Mats.Length+1; j++) {Walls[j].material = Mats[i]; }
         
     }
