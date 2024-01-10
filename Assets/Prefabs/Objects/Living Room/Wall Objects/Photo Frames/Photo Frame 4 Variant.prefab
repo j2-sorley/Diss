@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4121713760637018898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2675532019940073860, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 388d58bc76fad3541a4e5e261e39bc21, type: 2}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.051589
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3327168
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2086027
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096210673200154440, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6930655387186211031, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa,
+        type: 3}
+      propertyPath: m_Name
+      value: Photo Frame 4 Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa, type: 3}
