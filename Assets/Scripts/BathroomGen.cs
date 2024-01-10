@@ -19,6 +19,16 @@ public class BathroomGen : MonoBehaviour
     public GameObject[] FloorItems;
     private int FloorItemsAmount;
     public GameObject[] Lights;
+
+    [Header("Walls")]
+    public Renderer[] Walls;
+    public Renderer Floors;
+    public Renderer Roof; 
+    
+    [Header("Materials")]
+    public Material[] WallMats;
+    public Material[] FloorMats;
+    public Material[] RoofMats;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,9 +61,23 @@ public class BathroomGen : MonoBehaviour
        Instantiate(FloorItems[Random.Range(0, FloorItems.Length)], FloorSpawnPoints[b].position, Quaternion.identity);
        FloorSpawnPoints.Remove(FloorSpawnPoints[b]);
        }
-       
-             
-            
+
+        // Walls
+
+        int W = Random.Range(0, WallMats.Length);
+        for (int j = 0; j < Walls.Length ; j++) { Walls[j].material = WallMats[W]; }
+
+        // Roof 
+
+        int f = Random.Range(0, FloorMats.Length);
+        Floors.material = FloorMats[f];
+
+        int R = Random.Range(0, RoofMats.Length);
+        Roof.material = RoofMats[R];
+
+
+
+
     }
 
     // Update is called once per frame
