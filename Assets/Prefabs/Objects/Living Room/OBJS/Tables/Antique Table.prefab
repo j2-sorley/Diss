@@ -473,7 +473,7 @@ MonoBehaviour:
   - {fileID: 7962716903221734417}
   LargespawnPoints: {fileID: 6292328299684352281}
   Items:
-  - {fileID: 5859958029064406911, guid: 32e4e494273b78349a8bf6769a72996e, type: 3}
+  - {fileID: 3146732478474378568, guid: 6267d7b1ccd1abd4db021c42ab88c379, type: 3}
   largeItems:
   - {fileID: 2768907198008353510, guid: bdd28b73daeba274581e461ea033aa3a, type: 3}
   ItemAmount: 0
