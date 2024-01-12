@@ -37,6 +37,7 @@ public class LivingRoomGen : MonoBehaviour
     public GameObject[] FloorItems;
     private int FloorItemsAmount;
     public GameObject[] Lights;
+    public GameObject[] LargeObjects; 
 
     [Header("Walls")]
     public Renderer[] Walls;
@@ -86,6 +87,9 @@ public class LivingRoomGen : MonoBehaviour
                 EastFloorSpawnPoints.Remove(EastFloorSpawnPoints[b]);
             }
 
+            //large Items
+            int Q = Random.Range(0, LargeObjects.Length);
+            Instantiate(LargeObjects[Q], EastLargeObjectSpawnPoint.position, EastLargeObjectSpawnPoint.rotation); 
             Debug.Log("East");
         }
 
@@ -119,9 +123,13 @@ public class LivingRoomGen : MonoBehaviour
                 int b = Random.Range(0, WestFloorSpawnPoints.Count);
                 Instantiate(FloorItems[Random.Range(0, FloorItems.Length)], WestFloorSpawnPoints[b].position, Quaternion.identity);
                 WestFloorSpawnPoints.Remove(WestFloorSpawnPoints[b]);
-            }
 
-            Debug.Log("West");
+                
+            }
+                //large Items
+                int Q = Random.Range(0, LargeObjects.Length);
+                Instantiate(LargeObjects[Q], WestLargeObjectSpawnPoint.position, WestLargeObjectSpawnPoint.rotation);
+                Debug.Log("West");
         }
 
         if (Direction == 2)
@@ -155,7 +163,9 @@ public class LivingRoomGen : MonoBehaviour
                 Instantiate(FloorItems[Random.Range(0, FloorItems.Length)], NorthFloorSpawnPoints[b].position, Quaternion.identity);
                 NorthFloorSpawnPoints.Remove(NorthFloorSpawnPoints[b]);
             }
-
+            //large Items
+            int Q = Random.Range(0, LargeObjects.Length);
+            Instantiate(LargeObjects[Q], NorthLargeObjectSpawnPoint.position, NorthLargeObjectSpawnPoint.rotation);
             Debug.Log("North");
         }
 
