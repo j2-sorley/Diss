@@ -38,6 +38,7 @@ public class LivingRoomGen : MonoBehaviour
     private int FloorItemsAmount;
     public GameObject[] Lights;
     public GameObject[] LargeObjects; 
+    public GameObject[] FeatureWall;
 
     [Header("Walls")]
     public Renderer[] Walls;
@@ -89,8 +90,17 @@ public class LivingRoomGen : MonoBehaviour
 
             //large Items
             int Q = Random.Range(0, LargeObjects.Length);
-            Instantiate(LargeObjects[Q], EastLargeObjectSpawnPoint.position, EastLargeObjectSpawnPoint.rotation); 
+            Instantiate(LargeObjects[Q], EastLargeObjectSpawnPoint.position, EastLargeObjectSpawnPoint.rotation);
+
+            //Feature wall 
+
+            int F = Random.Range(0, FeatureWall.Length);
+            Instantiate(FeatureWall[F], EastFeatureWall.position, EastFeatureWall.rotation); 
+            
+            
             Debug.Log("East");
+
+            
         }
 
         if (Direction==1)
@@ -126,8 +136,11 @@ public class LivingRoomGen : MonoBehaviour
 
                 
             }
-                //large Items
-                int Q = Random.Range(0, LargeObjects.Length);
+
+            int F = Random.Range(0, FeatureWall.Length);
+            Instantiate(FeatureWall[F], WestFeatureWall.position, WestFeatureWall.rotation);
+            //large Items
+            int Q = Random.Range(0, LargeObjects.Length);
                 Instantiate(LargeObjects[Q], WestLargeObjectSpawnPoint.position, WestLargeObjectSpawnPoint.rotation);
                 Debug.Log("West");
         }
@@ -163,6 +176,10 @@ public class LivingRoomGen : MonoBehaviour
                 Instantiate(FloorItems[Random.Range(0, FloorItems.Length)], NorthFloorSpawnPoints[b].position, Quaternion.identity);
                 NorthFloorSpawnPoints.Remove(NorthFloorSpawnPoints[b]);
             }
+
+            int F = Random.Range(0, FeatureWall.Length);
+            Instantiate(FeatureWall[F], NorthFeatureWall.position, NorthFeatureWall.rotation);
+
             //large Items
             int Q = Random.Range(0, LargeObjects.Length);
             Instantiate(LargeObjects[Q], NorthLargeObjectSpawnPoint.position, NorthLargeObjectSpawnPoint.rotation);
