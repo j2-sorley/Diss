@@ -167,6 +167,7 @@ public class LivingRoomGen : MonoBehaviour
                 int b = Random.Range(0, NorthWallspawnPoints.Count);
                 Instantiate(WallItems[Random.Range(0, WallItems.Length)], NorthWallspawnPoints[b].position, NorthWallspawnPoints[b].rotation);
                 NorthWallspawnPoints.Remove(NorthWallspawnPoints[b]);
+                
             }
             // Floor Items
             FloorItemsAmount = Random.Range(2, NorthFloorSpawnPoints.Count);
