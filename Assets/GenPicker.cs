@@ -5,7 +5,7 @@ using UnityEngine;
 public class GenPicker : MonoBehaviour
 {
     public GameObject[] Gens;
-    public int Picker; 
+    private int Picker; 
     // Start is called before the first frame update
     void Start()
     {
