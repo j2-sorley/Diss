@@ -870,8 +870,7 @@ MonoBehaviour:
   - {fileID: 8668026363880739662, guid: 5af8247f123d1fe4ab0c92a1502c5f97, type: 3}
   - {fileID: 1151936436643493665, guid: ba41b798edbff3b419fede2329840280, type: 3}
   FeatureWall:
-  - {fileID: 3141164814629397757, guid: d3e9ed0d48c67834fb2c543b67121de2, type: 3}
-  - {fileID: 8154904362762947278, guid: 6124eab976f21e546911d0fc113f9855, type: 3}
+  - {fileID: 6945051386773057419, guid: a1c20164d5a3a0740b90dee1801d97d3, type: 3}
   Walls:
   - {fileID: 546445887}
   - {fileID: 803459222}
