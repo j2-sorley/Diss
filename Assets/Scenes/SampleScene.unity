@@ -2036,12 +2036,16 @@ MonoBehaviour:
   - {fileID: 7198653874451419111, guid: 11c5b1065a148ed49b6d42bae3a7bd2f, type: 3}
   WallItems:
   - {fileID: 2386940130978719282, guid: ddbf7a9b1582d564792069826969fc3b, type: 3}
+  - {fileID: 7734988847181004762, guid: fd3720a6fb762734b9312309fab1f159, type: 3}
   FloorItems:
   - {fileID: 7170580571810851455, guid: 4e2ee7697eae11f419dca6a81f11e28e, type: 3}
   Lights:
   - {fileID: 8963309171885521597, guid: 1cc9bbd912bb86442b2ffde35f150016, type: 3}
   FeatureWall:
   - {fileID: 3141164814629397757, guid: d3e9ed0d48c67834fb2c543b67121de2, type: 3}
+  - {fileID: 6945051386773057419, guid: a1c20164d5a3a0740b90dee1801d97d3, type: 3}
+  - {fileID: 5426359454230165398, guid: 737248f20e0bea1488e9abd2c2f669c2, type: 3}
+  - {fileID: 8154904362762947278, guid: 6124eab976f21e546911d0fc113f9855, type: 3}
   Walls:
   - {fileID: 546445887}
   - {fileID: 803459222}
