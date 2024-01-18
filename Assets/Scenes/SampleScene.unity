@@ -870,11 +870,7 @@ MonoBehaviour:
   - {fileID: 8668026363880739662, guid: 5af8247f123d1fe4ab0c92a1502c5f97, type: 3}
   - {fileID: 1151936436643493665, guid: ba41b798edbff3b419fede2329840280, type: 3}
   FeatureWall:
-  - {fileID: 6130161194390620545, guid: d5a9c45272d44d3499dedb0fb5eb2235, type: 3}
-  - {fileID: 4253193531366106280, guid: 0ab917da03c182740b4db8520bd31416, type: 3}
-  - {fileID: 2887754920266832181, guid: 236ea10dd82e47744af8ae78060c250f, type: 3}
-  - {fileID: 1876109805608750798, guid: 327a535bb7c468b42933b7ffc012f57c, type: 3}
-  - {fileID: 7067126302833198839, guid: 5e3e16f056d8611498b53de261186190, type: 3}
+  - {fileID: 5354792201657157385, guid: 166e5a2bed1b0f24cb6db7817cfbfef7, type: 3}
   Walls:
   - {fileID: 546445887}
   - {fileID: 803459222}
@@ -4805,10 +4801,10 @@ MonoBehaviour:
   - {fileID: 2034574082}
   - {fileID: 246385152}
   - {fileID: 637221499}
-  ForceSpawn: 0
+  ForceSpawn: 1
   Bathroom: 0
   kitchen: 0
-  Livingroom: 0
+  Livingroom: 1
   RareRoom: 0
   BathroomGen: {fileID: 2034574082}
   KitchenGen: {fileID: 637221499}
