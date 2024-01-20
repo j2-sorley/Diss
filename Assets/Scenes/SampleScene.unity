@@ -837,24 +837,15 @@ MonoBehaviour:
   - {fileID: 6679327399161388982, guid: 1974bb8e3d3cd284383af7db07742380, type: 3}
   - {fileID: 5122989756549757592, guid: 325f5a70c6b53bb458508404070e8d76, type: 3}
   WallItems:
-  - {fileID: 2386940130978719282, guid: ddbf7a9b1582d564792069826969fc3b, type: 3}
-  - {fileID: 9082512023717224675, guid: 1bcbd9af01f629d469153e52920d6878, type: 3}
-  - {fileID: 6930655387186211031, guid: 6c92f4c53686c0e4eafe8fd5d646dcfa, type: 3}
-  - {fileID: 6421542121487616965, guid: e9abaa7a8ace718439b9e922fc2acecc, type: 3}
-  - {fileID: 5783224695805907741, guid: 811096b0c8d1e1d4eb7435e30c30a843, type: 3}
-  - {fileID: 7982627677218441971, guid: 6fbe7b8034a7e184ca6951ac18478a59, type: 3}
-  - {fileID: 840153612274460738, guid: e7ba1f7926eee2942ab0f2c2e18d4163, type: 3}
-  - {fileID: 2650709861877768584, guid: 273b9d8252bc04b4287b9fc476815577, type: 3}
-  - {fileID: 9085789207675337974, guid: 36a3cbbcad81ab74c9cfc75c01ea9944, type: 3}
-  - {fileID: 4898001046799677466, guid: 92762e098a1b0654cb8b1075a342503a, type: 3}
-  - {fileID: 829837759295990770, guid: 0fbe49b11510a3748a04f5f481042952, type: 3}
-  - {fileID: 7089668343374975732, guid: 41a03d81f7dfedb43a0231b770f66109, type: 3}
-  - {fileID: 7026718396898084993, guid: 0a0dba00269ea114b93e14becb97f692, type: 3}
-  - {fileID: 4790453660765379912, guid: 786a6952a5fd869458e03979d11b35eb, type: 3}
-  - {fileID: 882564029313772230, guid: fc67c5a625ad51643a98c50e234138c1, type: 3}
-  - {fileID: 7656592115242000694, guid: f9327e3818f85ea46b59fde750d6ba17, type: 3}
-  - {fileID: 4101328934870100719, guid: 547d3dd4e1b63ee45914bea1832cca32, type: 3}
-  - {fileID: 819481631565813135, guid: 873e79816d6fbaa4e9ee3c854afadbf7, type: 3}
+  - {fileID: 5546847264493483956, guid: 8b61f5bd1adb13e40a6ee696c86908e3, type: 3}
+  - {fileID: 3263543306372840229, guid: 08aa16036eccebc41b6b9eddba25aaf1, type: 3}
+  - {fileID: 8769920792847617890, guid: 6c39a69a7c9969b4b945604523843d43, type: 3}
+  - {fileID: 2509710866853924749, guid: e94123e0868559245afa25497c72f18f, type: 3}
+  - {fileID: 2112923902044399537, guid: 0a1b18c03c62c764a861e744afcef84b, type: 3}
+  - {fileID: 5872886079334183831, guid: 3098f9a6efb1ba24a86d16d24d86ea38, type: 3}
+  - {fileID: 2534185726190991676, guid: 8e10633d50d249e4f9112005ac8f24b2, type: 3}
+  - {fileID: 1803171361032554383, guid: 87fbee7ab4f89e04b912ceed1c5f80e7, type: 3}
+  - {fileID: 5602083971569767446, guid: 5132da081bf6f844ba9ba16e9531497c, type: 3}
   FloorItems:
   - {fileID: 7170580571810851455, guid: 4e2ee7697eae11f419dca6a81f11e28e, type: 3}
   Lights:
@@ -870,7 +861,11 @@ MonoBehaviour:
   - {fileID: 8668026363880739662, guid: 5af8247f123d1fe4ab0c92a1502c5f97, type: 3}
   - {fileID: 1151936436643493665, guid: ba41b798edbff3b419fede2329840280, type: 3}
   FeatureWall:
-  - {fileID: 5354792201657157385, guid: 166e5a2bed1b0f24cb6db7817cfbfef7, type: 3}
+  - {fileID: 6130161194390620545, guid: d5a9c45272d44d3499dedb0fb5eb2235, type: 3}
+  - {fileID: 4253193531366106280, guid: 0ab917da03c182740b4db8520bd31416, type: 3}
+  - {fileID: 2887754920266832181, guid: 236ea10dd82e47744af8ae78060c250f, type: 3}
+  - {fileID: 1876109805608750798, guid: 327a535bb7c468b42933b7ffc012f57c, type: 3}
+  - {fileID: 7067126302833198839, guid: 5e3e16f056d8611498b53de261186190, type: 3}
   Walls:
   - {fileID: 546445887}
   - {fileID: 803459222}
@@ -3470,13 +3465,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15108824, y: 0, z: 0, w: 0.9885203}
-  m_LocalPosition: {x: 2.38, y: 3.15, z: -7.3}
+  m_LocalRotation: {x: 0.13958731, y: -0.3782903, z: 0.057818957, w: 0.91327363}
+  m_LocalPosition: {x: 4.937, y: 2.311, z: -4.639}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 17.38, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.38, y: -45, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5536,6 +5531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 655319955874307277, guid: b8cdfc5da5b0f094fafca62b57d1fdce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1304027899094072600, guid: b8cdfc5da5b0f094fafca62b57d1fdce,
         type: 3}
@@ -7655,6 +7655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929692150214035439, guid: acb0058ccec2ae2418a10b40cd8b658b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3242729431384909877, guid: acb0058ccec2ae2418a10b40cd8b658b,
         type: 3}
