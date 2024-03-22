@@ -1,35 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
-public class HallwayOneStart : MonoBehaviour
+public class HallwayOneGen : MonoBehaviour
 {
     public List<Transform> largeRoomLocations;
     public List<Transform> smallRoomLocations;
     public List<Transform> HallwayExitOne;
     public List<Transform> HallwayExitTwo;
-    public List<GameObject> Hallways; 
+    public List<GameObject> Hallways;
     public GameObject Room;
     public GameObject[] SmallRoom;
-    
-    
+    public GameObject CollisonOneBox;
+    public GameObject CollisonTwoBox;
+    public bool ExitOneBlockedBool;
+    public bool ExitTwoBlockedBool;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-       
+        RoomOne();
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
-     public void RoomOne() 
+    private void OnTriggerEnter(Collider other)
     {
-        int a = Random.Range(0, 100); 
+        if (other = CollisonOneBox.GetComponent<Collider>())
+        {
+            ExitOneBlockedBool = true; 
+        }
+        if (other = CollisonTwoBox.GetComponent<Collider>())
+        {
+            ExitTwoBlockedBool = true;
+        }
+    }
+
+    public void RoomOne()
+    {
+        int a = Random.Range(0, 100);
         if (a > 90)
         {
             Instantiate(SmallRoom[Random.Range(0, SmallRoom.Length)], smallRoomLocations[0].position, smallRoomLocations[0].rotation);
@@ -38,11 +55,11 @@ public class HallwayOneStart : MonoBehaviour
 
         else
         {
-             Instantiate(Room, largeRoomLocations[0].position, largeRoomLocations[0].rotation);
+            Instantiate(Room, largeRoomLocations[0].position, largeRoomLocations[0].rotation);
         }
 
-        RoomTwo(); 
-    
+        RoomTwo();
+
     }
 
     void RoomTwo()
@@ -76,7 +93,7 @@ public class HallwayOneStart : MonoBehaviour
 
     }
 
-    void RoomFour() 
+    void RoomFour()
     {
         int D = Random.Range(0, 100);
         if (D > 90)
@@ -88,7 +105,7 @@ public class HallwayOneStart : MonoBehaviour
             Instantiate(Room, largeRoomLocations[3].position, largeRoomLocations[3].rotation);
         }
 
-        HallwayOne(); 
+        HallwayOne();
 
     }
 
@@ -98,24 +115,33 @@ public class HallwayOneStart : MonoBehaviour
 
         if (Gen.MoreHallways)
         {
-            int i = Random.Range(0, HallwayExitOne.Count);
-            Instantiate(Hallways[i], HallwayExitOne[i].position, HallwayExitOne[i].rotation);
-            Gen.HallwayIntAdd();
+            if (!ExitOneBlockedBool)
+            {
+
+                int i = Random.Range(0, HallwayExitOne.Count);
+                Instantiate(Hallways[i], HallwayExitOne[i].position, HallwayExitOne[i].rotation);
+                Gen.HallwayIntAdd();
+            }
         }
-           
+
         HallwayTwo();
     }
 
-    void HallwayTwo() 
-    { 
+    void HallwayTwo()
+    {
         var Gen = GameObject.Find("Generation Controller").GetComponent<GenController>();
 
         if (Gen.MoreHallways)
         {
-            int l = Random.Range(0, HallwayExitTwo.Count);
-            Instantiate(Hallways[l], HallwayExitTwo[l].position, HallwayExitTwo[l].rotation);
-            Gen.HallwayIntAdd();
+            if (!ExitTwoBlockedBool)
+            {
+                int l = Random.Range(0, HallwayExitTwo.Count);
+                Instantiate(Hallways[l], HallwayExitTwo[l].position, HallwayExitTwo[l].rotation);
+                Gen.HallwayIntAdd();
+            }
         }
-        
+
     }
+
+    
 }
