@@ -21,8 +21,9 @@ public class HallwayOneGen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int v = Random.Range(1, 3); 
                 StartCoroutine(Delay());
-        IEnumerator Delay() { yield return new WaitForSecondsRealtime(1); RoomOne();  }
+        IEnumerator Delay() { yield return new WaitForSecondsRealtime(v); RoomOne();  }
     }
 
     // Update is called once per frame

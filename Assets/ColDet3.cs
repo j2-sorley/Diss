@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColDet1 : MonoBehaviour
+public class ColDet3 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class ColDet1 : MonoBehaviour
         if (other.CompareTag("Room"))
         {
             var par = GetComponentInParent<HallwayTwoGen>();
-            par.ExitOneBlocked();
+            par.ExitThreeBlocked();
         }
     }
 }
