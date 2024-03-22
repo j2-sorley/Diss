@@ -21,9 +21,8 @@ public class HallwayOneGen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RoomOne();
-        
-
+                StartCoroutine(Delay());
+        IEnumerator Delay() { yield return new WaitForSecondsRealtime(1); RoomOne();  }
     }
 
     // Update is called once per frame
@@ -32,17 +31,10 @@ public class HallwayOneGen : MonoBehaviour
        
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other = CollisonOneBox.GetComponent<Collider>())
-        {
-            ExitOneBlockedBool = true; 
-        }
-        if (other = CollisonTwoBox.GetComponent<Collider>())
-        {
-            ExitTwoBlockedBool = true;
-        }
-    }
+    public void ExitOneBlocked() { ExitOneBlockedBool = true; }
+    public void ExitTwoBlocked() { ExitTwoBlockedBool = true; }
+
+
 
     public void RoomOne()
     {
