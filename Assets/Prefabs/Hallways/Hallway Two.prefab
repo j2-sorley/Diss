@@ -864,6 +864,10 @@ MonoBehaviour:
   - {fileID: 1270530818295137622}
   - {fileID: 1567739685999217970}
   - {fileID: 5420633708260824034}
+  - {fileID: 5770492658167485689}
+  - {fileID: 5475932177457160255}
+  - {fileID: 9157992631834568705}
+  - {fileID: 5186070010959990443}
   Floors:
   - {fileID: 2496664738933239153}
   - {fileID: 6741858915104409946}
@@ -2101,6 +2105,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1044964098964427721}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &9157992631834568705 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8185235735711546312, guid: 7aeb663ff5165004b890ee74546077cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1044964098964427721}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1081898849010157074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2518,6 +2528,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aeb663ff5165004b890ee74546077cd, type: 3}
+--- !u!23 &5770492658167485689 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8185235735711546312, guid: 7aeb663ff5165004b890ee74546077cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2414814468492619569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7784807043557280431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5587300508471207326, guid: 7aeb663ff5165004b890ee74546077cd,
@@ -2925,6 +2941,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aeb663ff5165004b890ee74546077cd, type: 3}
+--- !u!23 &5186070010959990443 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8185235735711546312, guid: 7aeb663ff5165004b890ee74546077cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 3922445860444108131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8927620519305531645 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5587300508471207326, guid: 7aeb663ff5165004b890ee74546077cd,
@@ -2999,6 +3021,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aeb663ff5165004b890ee74546077cd, type: 3}
+--- !u!23 &5475932177457160255 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8185235735711546312, guid: 7aeb663ff5165004b890ee74546077cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4209079794368535543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8638946354042076777 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5587300508471207326, guid: 7aeb663ff5165004b890ee74546077cd,

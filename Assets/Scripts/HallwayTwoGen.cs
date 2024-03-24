@@ -49,57 +49,40 @@ public class HallwayTwoGen : MonoBehaviour
         
     }
 
-    public void ExitOneBlocked() { ExitOneBlockedBool = true;}
-    public void ExitTwoBlocked() { ExitTwoBlockedBool = true;}
-    public void ExitThreeBlocked() {  ExitThreeBlockedBool = true;}
-    public void ExitFourBlocked() {  ExitFourBlockedBool = true;}
+    
+
+   
+   
 
     public void RoomOne()
     {
-        
-
-       
-        
-            Instantiate(Room, largeRoomLocations[0].position, largeRoomLocations[0].rotation);
-        
-
-        RoomTwo();
-
+         Instantiate(Room, largeRoomLocations[0].position, largeRoomLocations[0].rotation);
+         RoomTwo();
     }
 
     void RoomTwo()
     {
-        
-            Instantiate(Room, largeRoomLocations[1].position, largeRoomLocations[1].rotation);
-        
+        Instantiate(Room, largeRoomLocations[1].position, largeRoomLocations[1].rotation);
         RoomThree();
-
     }
 
     void RoomThree()
     {
-        
-        
-            Instantiate(Room, largeRoomLocations[2].position, largeRoomLocations[2].rotation);
-        
+        Instantiate(Room, largeRoomLocations[2].position, largeRoomLocations[2].rotation);
         RoomFour();
-
     }
 
     void RoomFour()
     {
-        
-            Instantiate(Room, largeRoomLocations[3].position, largeRoomLocations[3].rotation);
-        
-
+        Instantiate(Room, largeRoomLocations[3].position, largeRoomLocations[3].rotation);
         HallwayOne();
-
     }
+
+    public void ExitOneBlocked() { ExitOneBlockedBool = true;}
 
     void HallwayOne()
     {
         var Gen = GameObject.Find("Generation Controller").GetComponent<GenController>();
-
         StartCoroutine(Delay());
         IEnumerator Delay()
         {
@@ -113,12 +96,15 @@ public class HallwayTwoGen : MonoBehaviour
                     int i = Random.Range(0, HallwayExitOne.Count);
                     Instantiate(Hallways[i], HallwayExitOne[i].position, HallwayExitOne[i].rotation);
                     Gen.HallwayIntAdd();
+                    ExitOneBlockedBool = true;
                 }
             }
 
             HallwayTwo();
         }
     }
+
+    public void ExitTwoBlocked() { ExitTwoBlockedBool = true;}
 
     void HallwayTwo()
     {
@@ -137,12 +123,15 @@ public class HallwayTwoGen : MonoBehaviour
                     int i = Random.Range(0, HallwayExitTwo.Count);
                     Instantiate(Hallways[i], HallwayExitTwo[i].position, HallwayExitTwo[i].rotation);
                     Gen.HallwayIntAdd();
+                    ExitTwoBlockedBool = true;
                 }
             }
 
             HallwayThree();
         }
     }
+
+     public void ExitThreeBlocked() {  ExitThreeBlockedBool = true;}
 
     void HallwayThree()
     {
@@ -160,12 +149,15 @@ public class HallwayTwoGen : MonoBehaviour
                     int i = Random.Range(0, HallwayExitThree.Count);
                     Instantiate(Hallways[i], HallwayExitThree[i].position, HallwayExitThree[i].rotation);
                     Gen.HallwayIntAdd();
+                    ExitThreeBlockedBool = true;
                 }
             }
 
             HallwayFour();
         }
     }
+
+    public void ExitFourBlocked() {  ExitFourBlockedBool = true;}
 
     void HallwayFour()
     {
@@ -184,6 +176,7 @@ public class HallwayTwoGen : MonoBehaviour
                     int i = Random.Range(0, HallwayExitFour.Count);
                     Instantiate(Hallways[i], HallwayExitFour[i].position, HallwayExitFour[i].rotation);
                     Gen.HallwayIntAdd();
+                    ExitFourBlockedBool = true;
                 }
            }
 
