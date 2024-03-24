@@ -4301,7 +4301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785718665}
   m_Layer: 0
-  m_Name: Check
+  m_Name: Check One
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

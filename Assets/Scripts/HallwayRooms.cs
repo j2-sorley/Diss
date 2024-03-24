@@ -12,8 +12,17 @@ public class HallwayOneStart : MonoBehaviour
     public List<GameObject> Hallways; 
     public GameObject Room;
     public GameObject[] SmallRoom;
-    
-    
+
+    [Header("Mats")]
+    public Material[] WallMats;
+    public Material[] FloorMats;
+    public Material[] RoofMats;
+
+    [Header("Walls")]
+    public Renderer[] Walls;
+    public Renderer Floors;
+    public Renderer Roof;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +38,17 @@ public class HallwayOneStart : MonoBehaviour
 
      public void RoomOne() 
     {
+        int W = Random.Range(0, WallMats.Length);
+        for (int j = 0; j < Walls.Length; j++) { Walls[j].material = WallMats[W]; }
+
+        int f = Random.Range(0, FloorMats.Length);
+        Floors.material = FloorMats[f];
+
+        int R = Random.Range(0, RoofMats.Length);
+        Roof.material = RoofMats[R];
+
+
+
         int a = Random.Range(0, 100); 
         if (a > 90)
         {

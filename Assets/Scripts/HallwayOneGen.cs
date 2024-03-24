@@ -16,11 +16,32 @@ public class HallwayOneGen : MonoBehaviour
     public bool ExitOneBlockedBool;
     public bool ExitTwoBlockedBool;
 
+    [Header("Mats")] 
+    public Material[] WallMats;
+    public Material[] FloorMats;
+    public Material[] RoofMats;
+
+    [Header("Walls")]
+    public Renderer[] Walls;
+    public Renderer Floors;
+    public Renderer Roof;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        int W = Random.Range(0, WallMats.Length);
+        for (int j = 0; j < Walls.Length; j++) { Walls[j].material = WallMats[W]; }
+
+        // Roof 
+
+        int f = Random.Range(0, FloorMats.Length);
+        Floors.material = FloorMats[f];
+
+        int R = Random.Range(0, RoofMats.Length);
+        Roof.material = RoofMats[R];
+
         int v = Random.Range(1, 3); 
                 StartCoroutine(Delay());
         IEnumerator Delay() { yield return new WaitForSecondsRealtime(v); RoomOne();  }
@@ -105,35 +126,48 @@ public class HallwayOneGen : MonoBehaviour
     void HallwayOne()
     {
         var Gen = GameObject.Find("Generation Controller").GetComponent<GenController>();
+        StartCoroutine(Delay());
+        IEnumerator Delay() 
+        
+        { yield return new WaitForSecondsRealtime(1); 
 
-        if (Gen.MoreHallways)
-        {
-            if (!ExitOneBlockedBool)
-            {
+            if (Gen.MoreHallways)
+                {
+                    if (!ExitOneBlockedBool)
+                    {
 
-                int i = Random.Range(0, HallwayExitOne.Count);
-                Instantiate(Hallways[i], HallwayExitOne[i].position, HallwayExitOne[i].rotation);
-                Gen.HallwayIntAdd();
-            }
+                     int i = Random.Range(0, HallwayExitOne.Count);
+                     Instantiate(Hallways[i], HallwayExitOne[i].position, HallwayExitOne[i].rotation);
+                     Gen.HallwayIntAdd();
+                    }
+                }
+         HallwayTwo();
         }
 
-        HallwayTwo();
+       
     }
 
     void HallwayTwo()
     {
         var Gen = GameObject.Find("Generation Controller").GetComponent<GenController>();
-
-        if (Gen.MoreHallways)
+        StartCoroutine(Delay());
+        IEnumerator Delay()
         {
-            if (!ExitTwoBlockedBool)
+            yield return new WaitForSecondsRealtime(1);
+
+            if (Gen.MoreHallways)
             {
-                int l = Random.Range(0, HallwayExitTwo.Count);
-                Instantiate(Hallways[l], HallwayExitTwo[l].position, HallwayExitTwo[l].rotation);
-                Gen.HallwayIntAdd();
+                if (!ExitTwoBlockedBool)
+                {
+                    int l = Random.Range(0, HallwayExitTwo.Count);
+                    Instantiate(Hallways[l], HallwayExitTwo[l].position, HallwayExitTwo[l].rotation);
+                    Gen.HallwayIntAdd();
+                }
             }
+            //doorspawn
         }
 
+        
     }
 
     
