@@ -11,7 +11,8 @@ public class GenController : MonoBehaviour
     public TMP_InputField input;
     public GameObject StartSystem;
     public int CurrentHallways;
-    public bool MoreHallways; 
+    public bool MoreHallways;
+   
     
     // Start is called before the first frame update
     void Start()
@@ -23,8 +24,32 @@ public class GenController : MonoBehaviour
     void Update()
     {
         if (Hallways > CurrentHallways) {MoreHallways = true;}
-        if (Hallways == CurrentHallways) {MoreHallways = false; Debug.Log("Met"); }
-        if (Hallways < CurrentHallways) { MoreHallways = false; Debug.Log("Met"); }
+        if (Hallways == CurrentHallways) {MoreHallways = false; Debug.Log("Met");
+
+
+
+
+           
+             var rigid = GetComponents(typeof(Rigidbody));
+            foreach (Rigidbody rigidbody in rigid)
+            {
+                rigidbody.isKinematic = true;
+            }
+
+
+
+
+        }
+        if (Hallways < CurrentHallways) { MoreHallways = false; Debug.Log("Met");
+
+
+            var rigid = GetComponents(typeof(Rigidbody));
+            foreach (Rigidbody rigidbody in rigid)
+            {
+                rigidbody.isKinematic = true;
+            }
+
+        }
     }
 
     public void hallwayLimitSet() 
