@@ -146,7 +146,6 @@ GameObject:
   - component: {fileID: 7790965708160548385}
   - component: {fileID: 7188848659429774021}
   - component: {fileID: 1531540209799885451}
-  - component: {fileID: 2934163395657800999}
   m_Layer: 0
   m_Name: Floor (2)
   m_TagString: Room
@@ -240,33 +239,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2934163395657800999
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2377687816179670740}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &2983142671904892870
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +532,6 @@ GameObject:
   - component: {fileID: 1402861348621525869}
   - component: {fileID: 3993461622051043612}
   - component: {fileID: 8281385773579668487}
-  - component: {fileID: 7543598328209503141}
   m_Layer: 0
   m_Name: Floor (1)
   m_TagString: Room
@@ -654,33 +625,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7543598328209503141
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5833868338529455153}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &6167868774474414629
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2474491024258789431}
   - component: {fileID: 6349566562150012174}
+  - component: {fileID: 596673446022248318}
   m_Layer: 0
   m_Name: Hallway Two
   m_TagString: Room
@@ -874,6 +819,17 @@ MonoBehaviour:
   Roof:
   - {fileID: 3993461622051043612}
   - {fileID: 7188848659429774021}
+--- !u!192 &596673446022248318
+OcclusionArea:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6785341404071496655}
+  serializedVersion: 2
+  m_Size: {x: 24.78, y: 7.7, z: 26.28}
+  m_Center: {x: 6.97, y: 0, z: 0}
+  m_IsViewVolume: 1
 --- !u!1 &6806708149688665481
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +911,7 @@ GameObject:
   - component: {fileID: 3099543303255758835}
   - component: {fileID: 2496664738933239153}
   - component: {fileID: 1350167116507472893}
-  - component: {fileID: 6535831030047163184}
+  - component: {fileID: 2729659779255852453}
   m_Layer: 0
   m_Name: Floor (1)
   m_TagString: Room
@@ -1049,7 +1005,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6535831030047163184
+--- !u!54 &2729659779255852453
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1071,7 +1027,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
@@ -1155,7 +1111,7 @@ GameObject:
   - component: {fileID: 5347139502053857829}
   - component: {fileID: 6741858915104409946}
   - component: {fileID: 5483469826822875477}
-  - component: {fileID: 2221209735706319717}
+  - component: {fileID: 6624739199015829240}
   m_Layer: 0
   m_Name: Floor (2)
   m_TagString: Room
@@ -1249,7 +1205,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2221209735706319717
+--- !u!54 &6624739199015829240
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1271,7 +1227,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126

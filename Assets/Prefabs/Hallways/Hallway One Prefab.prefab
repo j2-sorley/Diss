@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 2794601820045790361}
   - component: {fileID: 3748862789293445177}
   - component: {fileID: 6266065977507712525}
-  - component: {fileID: 4112749250428121444}
+  - component: {fileID: 2132997039835728587}
   m_Layer: 0
   m_Name: Floor (1)
   m_TagString: Untagged
@@ -174,7 +174,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4112749250428121444
+--- !u!54 &2132997039835728587
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,7 +184,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -194,8 +194,8 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 1904463707670347359}
   - component: {fileID: 2514732673396736344}
   - component: {fileID: 5111585386735569052}
+  - component: {fileID: 8018608449528740447}
   m_Layer: 0
   m_Name: Hallway One Prefab
   m_TagString: Room
@@ -367,6 +368,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 14.88753, y: 2.6315598, z: 1}
   m_Center: {x: -0.99563646, y: 1.2268817, z: 0}
+--- !u!192 &8018608449528740447
+OcclusionArea:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2663293968161085825}
+  serializedVersion: 2
+  m_Size: {x: 15.050798, y: 3.189735, z: 2}
+  m_Center: {x: -1.003628, y: 1.0948675, z: 0}
+  m_IsViewVolume: 1
 --- !u!1 &3534654405205857113
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +457,7 @@ GameObject:
   - component: {fileID: 1968114335771309113}
   - component: {fileID: 4257325000973333928}
   - component: {fileID: 2450401810271193715}
-  - component: {fileID: 1046035867229291557}
+  - component: {fileID: 182274647838266402}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Room
@@ -539,7 +551,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1046035867229291557
+--- !u!54 &182274647838266402
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -549,7 +561,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -559,8 +571,8 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
