@@ -506,6 +506,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Room Adventure
       objectReference: {fileID: 0}
+    - target: {fileID: 2241791277084099116, guid: 01ab2246b1395384e9d4566132c73e22,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5103551559209958120, guid: 01ab2246b1395384e9d4566132c73e22,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1354,6 +1359,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Room FPS
       objectReference: {fileID: 0}
+    - target: {fileID: 1182363818798056652, guid: 0cc11078d95e4f844874f128fa03c1a9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5307384354996550664, guid: 0cc11078d95e4f844874f128fa03c1a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1669,6 +1679,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NestedParent_Unpack
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2370,6 +2385,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 85fb2bf4cc6291444b36ff598e7de1d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 85fb2bf4cc6291444b36ff598e7de1d3,
         type: 3}
@@ -3207,6 +3227,89 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05000001, y: 0.024999999, z: 0.000010000003}
   m_Center: {x: 0, y: 0, z: -0.000000014901161}
+--- !u!1001 &726302015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 46.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 76.44959
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -61.722466
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3777871139560352325, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195760871853447372, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: kitchen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195760871853447372, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: ForceSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4195760871853447372, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: Livingroom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7400940175110128186, guid: 332fb6ace95012441ae37b22c457025b,
+        type: 3}
+      propertyPath: m_Name
+      value: Large Room
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 332fb6ace95012441ae37b22c457025b, type: 3}
 --- !u!1 &752115073
 GameObject:
   m_ObjectHideFlags: 0
@@ -8313,6 +8416,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small Room Sports
       objectReference: {fileID: 0}
+    - target: {fileID: 2229994297090589187, guid: 48e2f9f79f4d7d34d8d41ac85e2f6efa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5133403925055552199, guid: 48e2f9f79f4d7d34d8d41ac85e2f6efa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9248,13 +9356,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 2140464831}
   colors:
-  - {r: 0.764151, g: 0.14898534, b: 0.14898534, a: 0}
+  - {r: 0.9150943, g: 0, b: 0, a: 0}
   - {r: 0.7647059, g: 0.1490196, b: 0.7021286, a: 0}
   - {r: 0.9811321, g: 0.913255, b: 0.9742147, a: 0}
   - {r: 0.9150943, g: 0.39206842, b: 0.24747826, a: 0}
-  randomColor: 0
+  set: {r: 0.5754717, g: 0.2571677, b: 0.01447723, a: 1}
+  Intesity: 50
+  randomColor: 1
   setColor: 0
-  randomIntensity: 0
+  randomIntensity: 1
 --- !u!114 &2140464830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9496,6 +9606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Photo Frame (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3263543306372840229, guid: 08aa16036eccebc41b6b9eddba25aaf1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5998494666276948696, guid: 08aa16036eccebc41b6b9eddba25aaf1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9613,6 +9728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Photo Frame (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5872886079334183831, guid: 3098f9a6efb1ba24a86d16d24d86ea38,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10064,6 +10184,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bedside Table 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4310603225541343571, guid: 0095750157af2f348bccaf319c12a5e2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5886343005523261308, guid: 0095750157af2f348bccaf319c12a5e2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10255,6 +10380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Photo Frame
       objectReference: {fileID: 0}
+    - target: {fileID: 5546847264493483956, guid: 8b61f5bd1adb13e40a6ee696c86908e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10346,6 +10476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Photo Frame (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112923902044399537, guid: 0a1b18c03c62c764a861e744afcef84b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7144430151072110156, guid: 0a1b18c03c62c764a861e744afcef84b,
         type: 3}
@@ -10464,6 +10599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Photo Frame (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602083971569767446, guid: 5132da081bf6f844ba9ba16e9531497c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10890,6 +11030,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Photo Frame (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8769920792847617890, guid: 6c39a69a7c9969b4b945604523843d43,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10907,6 +11052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Photo Frame (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509710866853924749, guid: e94123e0868559245afa25497c72f18f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6674555623900954224, guid: e94123e0868559245afa25497c72f18f,
         type: 3}
@@ -11100,6 +11250,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bedside Table 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5672509529454649286, guid: 34f5e159f1269594caa1696e999159c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11168,6 +11323,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf
       objectReference: {fileID: 0}
+    - target: {fileID: 7734988847181004762, guid: fd3720a6fb762734b9312309fab1f159,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11185,6 +11345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Photo Frame (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803171361032554383, guid: 87fbee7ab4f89e04b912ceed1c5f80e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7454203445364881010, guid: 87fbee7ab4f89e04b912ceed1c5f80e7,
         type: 3}
@@ -11321,6 +11486,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Photo Frame (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2534185726190991676, guid: 8e10633d50d249e4f9112005ac8f24b2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6728303331037219009, guid: 8e10633d50d249e4f9112005ac8f24b2,
         type: 3}
@@ -11479,3 +11649,4 @@ SceneRoots:
   - {fileID: 266203637}
   - {fileID: 75796368}
   - {fileID: 2016117437}
+  - {fileID: 726302015}
