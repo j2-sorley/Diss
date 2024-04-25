@@ -26,10 +26,8 @@ public class RoomGenPicker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        weighting = Random.Range(0, 100);
-        //weighting = 1;
-        Debug.Log(weighting);
-
+        weighting = Random.Range(1, 100);
+        
         if (!ForceSpawn)
         {
             if(weighting == 0){Debug.Log("RareRoom");}

@@ -8,6 +8,7 @@ public class InteractionParticals : MonoBehaviour
     public bool InRange;
     public bool Enabled; 
     public Animator animator;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,7 @@ public class InteractionParticals : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             InRange = true;
+           
              
         }
     }
@@ -53,7 +55,8 @@ public class InteractionParticals : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             InRange = false;
-           
+            
+
         }
     }
 }
