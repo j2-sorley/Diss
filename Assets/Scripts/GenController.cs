@@ -25,20 +25,12 @@ public class GenController : MonoBehaviour
     {
         if (Hallways > CurrentHallways) {MoreHallways = true;}
         if (Hallways == CurrentHallways) {MoreHallways = false; Debug.Log("Met");
-
-
-
-
            
              var rigid = GetComponents(typeof(Rigidbody));
             foreach (Rigidbody rigidbody in rigid)
             {
                 rigidbody.isKinematic = true;
             }
-
-
-
-
         }
         if (Hallways < CurrentHallways) { MoreHallways = false; Debug.Log("Met");
 
@@ -66,8 +58,5 @@ public class GenController : MonoBehaviour
         
 
     }
-
-
-
 
 }

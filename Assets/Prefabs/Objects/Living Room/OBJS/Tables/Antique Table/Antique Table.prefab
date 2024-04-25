@@ -596,15 +596,6 @@ MonoBehaviour:
   LargespawnPoints: {fileID: 6292328299684352281}
   Items:
   - {fileID: 3146732478474378568, guid: 6267d7b1ccd1abd4db021c42ab88c379, type: 3}
-  - {fileID: 1758423390345997587, guid: 968f9ca2cfa2cef448084d87f228c4e1, type: 3}
-  - {fileID: 4110580836953664248, guid: e77745d6477d43e43947ceb38752fa1e, type: 3}
-  - {fileID: 3311088099737597034, guid: dbf199c1a99534b46ace4c8f7611422b, type: 3}
-  - {fileID: 1423377329447074094, guid: 5a7ed25fd77442d4cb99468c4de487d5, type: 3}
-  - {fileID: 8354314504628813456, guid: aed063cf5168cd74993fbf50e08634ea, type: 3}
-  - {fileID: 8086835817767787411, guid: e05abd9933b6d9b4eae0a5dc1994160e, type: 3}
-  - {fileID: 7054832340423768919, guid: 5d72aedc805d30f48a6b0a4c694d1912, type: 3}
-  - {fileID: 1313261523487160213, guid: 6f95c78e0b1c2a94e95625bd7ce510cf, type: 3}
-  - {fileID: 4151595657038369631, guid: d16189d0e3e5ffa47ba101f2089d4109, type: 3}
   largeItems:
   - {fileID: 2768907198008353510, guid: bdd28b73daeba274581e461ea033aa3a, type: 3}
   ItemAmount: 0
